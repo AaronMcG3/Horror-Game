@@ -24,8 +24,8 @@ public class SynthNode : MonoBehaviour {
 	void Update () {
         if (synthNodeUI.activeSelf)
         {
-            getCurr();
-            checkAnswers();
+            GetCurr();
+            CheckAnswers();
         }
 
     }
@@ -50,14 +50,13 @@ public class SynthNode : MonoBehaviour {
         volumeAnswer = Random.Range(volume.x, volume.y);
     }
 
-    private void getCurr(){
+    private void GetCurr(){
         frequencyCurr = synthNodeUI.GetComponent<SynthNodeUI>().getFrequencyCurr();
         speedCurr = synthNodeUI.GetComponent<SynthNodeUI>().getSpeedCurr();
         volumeCurr = synthNodeUI.GetComponent<SynthNodeUI>().getVolumeCurr();
     }
 
-    
-    private void checkAnswers(){
+    private void CheckAnswers(){
         if (frequencyCurr < frequencyAnswer + 40f && frequencyCurr > frequencyAnswer - 40f && !answered[0])
         {
             synthNodeUI.GetComponent<SynthNodeUI>().CorrectAnswer();
@@ -79,12 +78,18 @@ public class SynthNode : MonoBehaviour {
         //if value < maxValue and value > minValue:
     }
 
-
     public void Hit(){
         Cursor.lockState = CursorLockMode.None;
         synthNodeUI.SetActive(true);
     }
 
+    public bool IsDone()
+    {
+        for (int i = 0; i < 1; i++){
+            if (!answered[i])
+                return false;
+        }
 
-
+        return true;
+    }
 }
