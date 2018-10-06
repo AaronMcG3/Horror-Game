@@ -12,9 +12,11 @@ public class PlayerLook : MonoBehaviour {
 	private float xAxisClamp;
 
     private void Awake(){
-		
+        mouseXInputName = "Mouse X";
+        mouseYInputName = "Mouse Y";
+        mouseSensitivity = 150f;
+        xAxisClamp = 0.0f;
         LockCursor();
-		xAxisClamp = 0.0f;
     } 
 
     // Use this for initialization
@@ -23,9 +25,9 @@ public class PlayerLook : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
-        CamerRotation();	
-	}
+    
+        CamerRotation();
+    }
 
     private void LockCursor(){
         

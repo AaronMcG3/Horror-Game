@@ -152,6 +152,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1500016259443424, guid: 63472d37d8456ff4ea2ac904cbb39807, type: 2}
+      propertyPath: m_TagString
+      value: SynthNode
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 63472d37d8456ff4ea2ac904cbb39807, type: 2}
   m_IsPrefabAsset: 0
@@ -478,6 +482,7 @@ GameObject:
   - component: {fileID: 406306269}
   - component: {fileID: 406306268}
   - component: {fileID: 406306270}
+  - component: {fileID: 406306271}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -558,6 +563,18 @@ MonoBehaviour:
   jumpKey: 32
   slopeForce: 5
   slopeForceRayLengthy: 1.5
+--- !u!114 &406306271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 406306267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5672621b34a07764c854953c70ef9765, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  point: {fileID: 1826164699}
 --- !u!1 &418739853
 GameObject:
   m_ObjectHideFlags: 0
