@@ -61,6 +61,7 @@ public class PlayerEvent : MonoBehaviour {
                 break;
         }
     }
+
     private void setIconHand(bool set){
         anim.SetBool("Idle", set);
     }

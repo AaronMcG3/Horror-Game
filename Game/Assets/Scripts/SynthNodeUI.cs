@@ -18,6 +18,8 @@ public class SynthNodeUI : MonoBehaviour {
 
     [SerializeField] private Button complete;
 
+    public GameObject blastDoor;
+
     public AudioClip clickClip, correctAnswer;
     public AudioSource interfaceClick;
 
@@ -41,6 +43,7 @@ public class SynthNodeUI : MonoBehaviour {
         playerEvent.GetComponent<PlayerEvent>().SetPlayer(false);
         gameObject.SetActive(false);
         Cursor.lockState = CursorLockMode.Locked;
+
     }
 
     public Vector2 getFrequencyMinMax(){
@@ -52,7 +55,7 @@ public class SynthNodeUI : MonoBehaviour {
     }
 
     public Vector2 getSpeedMinMax(){
-        return new Vector2(speed.minValue, frequency.maxValue);
+        return new Vector2(speed.minValue, speed.maxValue);
     }
 
     public float getSpeedCurr(){

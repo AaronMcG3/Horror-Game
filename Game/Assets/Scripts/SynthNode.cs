@@ -9,10 +9,13 @@ public class SynthNode : MonoBehaviour {
 
     private float frequencyAnswer, speedAnswer, volumeAnswer;
     private float frequencyCurr, speedCurr, volumeCurr;
-    private bool frequencyCorr;
+    private bool frequencyCorr, speedCorr, volumeCorr;
+
+    private bool[] answered;
 
     // Use this for initialization
     void Start () {
+        answered = new bool[6];
         GetData();
         GenerateAnswers();
     }
@@ -32,7 +35,13 @@ public class SynthNode : MonoBehaviour {
         speed = synthNodeUI.GetComponent<SynthNodeUI>().getSpeedMinMax();
         volume = synthNodeUI.GetComponent<SynthNodeUI>().getVolumeMinMax();
 
-        frequencyCorr = false;
+        for (int i = 0; i < answered.Length; i++){
+            answered[i] = false;
+        }
+
+        //frequencyCorr = false;
+        //speedCorr = false;
+        //volumeCorr = false;
     }
 
     private void GenerateAnswers(){
@@ -43,13 +52,28 @@ public class SynthNode : MonoBehaviour {
 
     private void getCurr(){
         frequencyCurr = synthNodeUI.GetComponent<SynthNodeUI>().getFrequencyCurr();
+        speedCurr = synthNodeUI.GetComponent<SynthNodeUI>().getSpeedCurr();
+        volumeCurr = synthNodeUI.GetComponent<SynthNodeUI>().getVolumeCurr();
     }
 
     
     private void checkAnswers(){
-        if (frequencyCurr < frequencyAnswer + 40 && frequencyCurr > frequencyAnswer - 40 && !frequencyCorr){
+        if (frequencyCurr < frequencyAnswer + 40f && frequencyCurr > frequencyAnswer - 40f && !answered[0])
+        {
             synthNodeUI.GetComponent<SynthNodeUI>().CorrectAnswer();
-            frequencyCorr = true;
+            answered[0] = true;
+        }
+
+        if(speedCurr < speedAnswer + 0.5f && speedCurr > speedAnswer - 0.5f && !answered[1])
+        {
+            synthNodeUI.GetComponent<SynthNodeUI>().CorrectAnswer();
+            answered[1] = true;
+        }
+
+        if (volumeCurr < volumeAnswer + 0.5f && volumeCurr > volumeAnswer - 0.5f && !answered[2])
+        {
+            synthNodeUI.GetComponent<SynthNodeUI>().CorrectAnswer();
+            answered[2] = true;
         }
 
         //if value < maxValue and value > minValue:
