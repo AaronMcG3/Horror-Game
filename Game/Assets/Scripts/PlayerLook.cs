@@ -10,12 +10,14 @@ public class PlayerLook : MonoBehaviour {
     [SerializeField] private Transform playerBody;
 	
 	private float xAxisClamp;
+    private bool lockPlayer;
 
     private void Awake(){
         mouseXInputName = "Mouse X";
         mouseYInputName = "Mouse Y";
         mouseSensitivity = 150f;
         xAxisClamp = 0.0f;
+        lockPlayer = false;
         LockCursor();
     } 
 
@@ -25,17 +27,15 @@ public class PlayerLook : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-    
-        CamerRotation();
+        if (lockPlayer == false)
+            CamerRotation();
     }
 
     private void LockCursor(){
-        
 		Cursor.lockState = CursorLockMode.Locked;
     }
 
     private void CamerRotation(){
-        
 		float mouseX = Input.GetAxis(mouseXInputName) * mouseSensitivity * Time.deltaTime;
         float mouseY = Input.GetAxis(mouseYInputName) * mouseSensitivity * Time.deltaTime;
 
@@ -57,9 +57,12 @@ public class PlayerLook : MonoBehaviour {
     }
 	
 	private void ClampXAxisRotationToValue(float value){
-
         Vector3 eulerRotation = transform.eulerAngles;
         eulerRotation.x = value;
         transform.eulerAngles = eulerRotation;
 	}
+
+    public void SetLockPlayer(bool set){
+        lockPlayer = set;
+    }
 }

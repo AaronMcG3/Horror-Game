@@ -12,10 +12,11 @@ public class PlayerMove : MonoBehaviour {
 
     private CharacterController charController;
 
-    private bool isJuming;
+    private bool isJuming, lockMovement;
 
     private void Awake(){
 
+        lockMovement = false;
         charController = GetComponent<CharacterController>();
     }
 
@@ -27,8 +28,8 @@ public class PlayerMove : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        PlayerMovement();
-		
+        if(lockMovement == false)
+            PlayerMovement();
 	}
 
     private void PlayerMovement(){
@@ -84,5 +85,9 @@ public class PlayerMove : MonoBehaviour {
                 return true;
 
         return false;
+    }
+
+    public void SetLockMovement(bool set){
+        lockMovement = set;
     }
 }

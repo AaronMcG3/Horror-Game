@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class SynthNodeUI : MonoBehaviour {
 
+    [SerializeField] private GameObject playerEvent;
+
     [SerializeField] private Slider frequency;
     [SerializeField] private Text currtFrequency;
 
@@ -16,10 +18,9 @@ public class SynthNodeUI : MonoBehaviour {
 
     [SerializeField] private Button complete;
 
-
     // Use this for initialization
     void Start () {
-        complete.onClick.AddListener(completeClick);
+        complete.onClick.AddListener(CompleteClick);
 	}
 	
 	// Update is called once per frame
@@ -29,24 +30,21 @@ public class SynthNodeUI : MonoBehaviour {
         currtVolume.text = volume.value.ToString();
     }
 
-    void completeClick()
-    {
+    void CompleteClick(){
+        playerEvent.GetComponent<PlayerEvent>().SetPlayer(false);
         gameObject.SetActive(false);
         Cursor.lockState = CursorLockMode.Locked;
     }
 
-    public float getFrequency()
-    {
+    public float getFrequency(){
         return frequency.value;
     }
 
-    public float getSpeed()
-    {
+    public float getSpeed(){
         return speed.value;
     }
 
-    public float getVolume()
-    {
+    public float getVolume(){
         return volume.value;
     }
 }

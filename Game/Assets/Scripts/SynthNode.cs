@@ -6,14 +6,6 @@ public class SynthNode : MonoBehaviour {
 
     [SerializeField] private GameObject synthNodeUI;
 
-    /*
-    private void OnMouseDown()
-    {
-        Cursor.lockState = CursorLockMode.None;
-        synthNodeUI.SetActive(true);
-    }
-    */
-
     // Use this for initialization
     void Start () {
 		
@@ -24,8 +16,7 @@ public class SynthNode : MonoBehaviour {
 		
 	}
 
-    public void Hit()
-    {
+    public void Hit(){
         Cursor.lockState = CursorLockMode.None;
         synthNodeUI.SetActive(true);
     }
