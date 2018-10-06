@@ -521,6 +521,7 @@ GameObject:
   - component: {fileID: 114535056269308652}
   - component: {fileID: 114373733416588258}
   - component: {fileID: 114070501009288068}
+  - component: {fileID: 82916156035993514}
   m_Layer: 5
   m_Name: Synth Node UI
   m_TagString: Untagged
@@ -806,9 +807,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4626747163709168}
   - component: {fileID: 65344272886315774}
+  - component: {fileID: 114024724878545592}
   m_Layer: 0
   m_Name: Synth Node
-  m_TagString: Untagged
+  m_TagString: SynthNode
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1810,7 +1812,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1500016259443424}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 73.24, y: -14.3, z: -47.17}
+  m_LocalPosition: {x: 54.18, y: -14.3, z: -52.62}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4312218237103282}
@@ -2318,6 +2320,101 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.3, y: 4.1, z: 2.2}
   m_Center: {x: -65.95, y: 16.4, z: 40.4}
+--- !u!82 &82916156035993514
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1346022797887320}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 25eb0cbe78491884cbb2d7d7d54b30d7, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!114 &114012927961644604
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2330,6 +2427,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_AllowSwitchOff: 0
+--- !u!114 &114024724878545592
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1500016259443424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d35eae93fcf80b4997a9feeebb7b632, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  synthNodeUI: {fileID: 1346022797887320}
 --- !u!114 &114057544899747088
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2374,6 +2483,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73f0cea7476ff1649a7138128733612f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerEvent: {fileID: 0}
   frequency: {fileID: 114279110282218474}
   currtFrequency: {fileID: 114346573397995326}
   speed: {fileID: 114427044832932352}

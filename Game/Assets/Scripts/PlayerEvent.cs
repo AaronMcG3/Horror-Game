@@ -8,6 +8,8 @@ public class PlayerEvent : MonoBehaviour {
     [SerializeField] private GameObject playercamera, playerMovement;
     [SerializeField] private Animator anim;
 
+    private RaycastHit hit;
+
     private bool setHit;
 
     private void Awake(){
@@ -26,7 +28,6 @@ public class PlayerEvent : MonoBehaviour {
 
     private void Fire()
     {
-        RaycastHit hit;
         Vector3 fwd = transform.TransformDirection(Vector3.forward);
 
         if (Input.GetButtonDown("Fire1") && setHit == false) {
@@ -41,13 +42,27 @@ public class PlayerEvent : MonoBehaviour {
                 Debug.Log("Did Hit");
             }
         }
-        else if (Physics.Raycast(transform.position, fwd, out hit, 3f, 1)){
-            //anim.SetTrigger("To Hand");
-            anim.SetBool("Idle", false);
+        else if (Physics.Raycast(transform.position, fwd, out hit, 3f, 1))
+            Interactable();
+        //}
+        //else
+         //   anim.SetBool("Idle", true);
+    }
+
+    private void Interactable()
+    {
+        switch (hit.collider.tag)
+        {
+            case "SynthNode":
+                setIconHand(false);
+                break;
+            default:
+                setIconHand(true);
+                break;
         }
-        else
-            anim.SetBool("Idle", true);
-        //anim.SetTrigger("To Idle");
+    }
+    private void setIconHand(bool set){
+        anim.SetBool("Idle", set);
     }
 
     public void SetPlayer(bool set){
