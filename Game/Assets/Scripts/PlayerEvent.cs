@@ -44,9 +44,11 @@ public class PlayerEvent : MonoBehaviour {
         }
         else if (Physics.Raycast(transform.position, fwd, out hit, 3f, 1))
             Interactable();
+        else
+            setIconHand(true);
         //}
         //else
-         //   anim.SetBool("Idle", true);
+        //   anim.SetBool("Idle", true);
     }
 
     private void Interactable()
