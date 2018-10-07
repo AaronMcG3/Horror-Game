@@ -11,8 +11,8 @@ public class SynthNode : MonoBehaviour {
     private float envelopeAnswer, effectAnswer, waveTypeAnswer;
     private float frequencyCurr, speedCurr, volumeCurr;
     private int envelopeCurr, effectCurr, waveTypeCurr;
-    private bool frequencyCorr, speedCorr, volumeCorr;
-    private bool[] envelope, effect, waveType;
+    //private bool frequencyCorr, speedCorr, volumeCorr;
+    private int envelope, effect, waveType;
 
     private bool[] answered;
 
@@ -37,9 +37,9 @@ public class SynthNode : MonoBehaviour {
         frequency = synthNodeUI.GetComponent<SynthNodeUI>().GetFrequencyMinMax();
         speed = synthNodeUI.GetComponent<SynthNodeUI>().GetSpeedMinMax();
         volume = synthNodeUI.GetComponent<SynthNodeUI>().GetVolumeMinMax();
-        //envelope = synthNodeUI.GetComponent<SynthNodeUI>().GetEnvelopeMax();
-       // effect = synthNodeUI.GetComponent<SynthNodeUI>().GetEffectMax();
-       // waveType = synthNodeUI.GetComponent<SynthNodeUI>().GetWaveTypeMax();
+        envelope = synthNodeUI.GetComponent<SynthNodeUI>().GetEnvelopeMax();
+        effect = synthNodeUI.GetComponent<SynthNodeUI>().GetEffectMax();
+        waveType = synthNodeUI.GetComponent<SynthNodeUI>().GetWaveTypeMax();
 
         for (int i = 0; i < answered.Length; i++){
             answered[i] = false;
@@ -54,12 +54,13 @@ public class SynthNode : MonoBehaviour {
         frequencyAnswer = Random.Range(frequency.x, frequency.y);
         speedAnswer = Random.Range(speed.x, speed.y);
         volumeAnswer = Random.Range(volume.x, volume.y);
-        //envelopeAnswer = Random.Range(0, envelope.Length);
-        //effectAnswer = Random.Range(0, effect.Length);
-        //waveTypeAnswer = Random.Range(0, waveType.Length);
-        Debug.Log("frequencyAnswer " + frequencyAnswer);
-        Debug.Log("speedAnswer " + speedAnswer);
-        Debug.Log("volumeAnswer " + volumeAnswer);
+        envelopeAnswer = Random.Range(1, envelope);
+        effectAnswer = Random.Range(1, effect);
+        waveTypeAnswer = Random.Range(1, waveType);
+        //Debug.Log("frequencyAnswer " + frequencyAnswer);
+        //Debug.Log("speedAnswer " + speedAnswer);
+        //Debug.Log("volumeAnswer " + volumeAnswer);
+        //Debug.Log("envelopeAnswer " + envelopeAnswer);
     }
 
     private void GetCurr(){
@@ -67,6 +68,8 @@ public class SynthNode : MonoBehaviour {
         speedCurr = synthNodeUI.GetComponent<SynthNodeUI>().GetSpeedCurr();
         volumeCurr = synthNodeUI.GetComponent<SynthNodeUI>().GetVolumeCurr();
         envelopeCurr = synthNodeUI.GetComponent<SynthNodeUI>().GetEnvelopeCurr();
+        effectCurr = synthNodeUI.GetComponent<SynthNodeUI>().GetEffectCurr();
+        waveTypeCurr = synthNodeUI.GetComponent<SynthNodeUI>().GetWaveTypeCurr();
     }
 
     private void CheckAnswers(){
@@ -88,13 +91,23 @@ public class SynthNode : MonoBehaviour {
             answered[2] = true;
         }
 
-        if(envelopeCurr == envelopeAnswer)
+        if((envelopeCurr == envelopeAnswer) && !answered[3])
         {
             synthNodeUI.GetComponent<SynthNodeUI>().CorrectAnswer();
             answered[3] = true;
         }
-        else
-            answered[3] = false;
+
+        if ((effectCurr == effectAnswer) && !answered[4])
+        {
+            synthNodeUI.GetComponent<SynthNodeUI>().CorrectAnswer();
+            answered[4] = true;
+        }
+
+        if ((waveTypeCurr == waveTypeAnswer) && !answered[5])
+        {
+            synthNodeUI.GetComponent<SynthNodeUI>().CorrectAnswer();
+            answered[5] = true;
+        }
 
         //if value < maxValue and value > minValue:
     }
@@ -106,7 +119,7 @@ public class SynthNode : MonoBehaviour {
 
     public bool IsDone()
     {
-        for (int i = 0; i < 3; i++){
+        for (int i = 0; i < 6; i++){
             if (!answered[i])
                 return false;
         }

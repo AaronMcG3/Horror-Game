@@ -22,17 +22,12 @@ public class SynthNodeUI : MonoBehaviour {
 
     [SerializeField] private Button complete;
 
-
-    private bool[] envelopeArr, effectArr, waveTypeArr;
     public AudioClip clickClip, correctAnswer;
     public AudioSource interfaceClick;
 
     // Use this for initialization
     void Start () {
         complete.onClick.AddListener(CompleteClick);
-        envelopeArr = new bool[3];
-        effectArr = new bool[3];
-        waveTypeArr = new bool[4];
     }
 	
 	// Update is called once per frame
@@ -71,22 +66,16 @@ public class SynthNodeUI : MonoBehaviour {
         return new Vector2(volume.minValue, volume.maxValue);
     }
 
-    public bool[] GetEnvelopeMax(){
-        for(int i = 0; i < 3; i++)
-            envelopeArr[i] = false;
-        return envelopeArr;
+    public int GetEnvelopeMax(){
+        return 3;
     }
 
-    public bool[] GetEffectMax(){
-        for (int i = 0; i < 3; i++)
-            effectArr[i] = false;
-        return effectArr;
+    public int GetEffectMax(){
+        return 3;
     }
 
-    public bool[] GetWaveTypeMax(){
-        for (int i = 4; i < 3; i++)
-            waveTypeArr[i] = false;
-        return waveTypeArr;
+    public int GetWaveTypeMax(){
+        return 4;
     }
 
     public float GetVolumeCurr(){
@@ -101,12 +90,38 @@ public class SynthNodeUI : MonoBehaviour {
     public int GetEnvelopeCurr()
     {
         if (aDEn.isOn)
-            return 0;
-        else if (aDSREn.isOn)
             return 1;
-        else if (glitchEn.isOn)
+        else if (aDSREn.isOn)
             return 2;
-        else
+        else if (glitchEn.isOn)
             return 3;
+        else
+            return 4;
+    }
+
+    public int GetEffectCurr()
+    {
+        if (noneEn.isOn)
+            return 1;
+        else if (distortionEn.isOn)
+            return 2;
+        else if (noiseEn.isOn)
+            return 3;
+        else
+            return 4;
+    }
+
+    public int GetWaveTypeCurr()
+    {
+        if (sineEn.isOn)
+            return 1;
+        else if (sawEn.isOn)
+            return 2;
+        else if (triEn.isOn)
+            return 3;
+        else if (rectEn.isOn)
+            return 4;
+        else
+            return 5;
     }
 }
