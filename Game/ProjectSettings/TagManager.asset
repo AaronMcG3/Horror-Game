@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - SynthNode
+  - OpenOut
+  - OpenIn
   layers:
   - Default
   - TransparentFX

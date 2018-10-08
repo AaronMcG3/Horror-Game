@@ -43,7 +43,7 @@ public class BlastDoorHandler : MonoBehaviour {
 
 
         isDone = false;
-        done = new bool[2];
+        done = new bool[8];
         openingDoor = this.GetComponent<AudioSource>();
 
         for (int i = 0; i < done.Length; i++)
@@ -70,6 +70,48 @@ public class BlastDoorHandler : MonoBehaviour {
             synthNodeLight2.color = Color.green;
         }
 
+        if (synthNode3.GetComponent<SynthNode>().IsDone() && !done[2])
+        {
+            Debug.Log("synthNode3");
+            done[2] = true;
+            synthNodeLight3.color = Color.green;
+        }
+
+        if (synthNode4.GetComponent<SynthNode>().IsDone() && !done[3])
+        {
+            Debug.Log("synthNode4");
+            done[3] = true;
+            synthNodeLight4.color = Color.green;
+        }
+
+        if (synthNode5.GetComponent<SynthNode>().IsDone() && !done[4])
+        {
+            Debug.Log("synthNode5");
+            done[4] = true;
+            synthNodeLight5.color = Color.green;
+        }
+
+        if (synthNode6.GetComponent<SynthNode>().IsDone() && !done[5])
+        {
+            Debug.Log("synthNode5");
+            done[5] = true;
+            synthNodeLight6.color = Color.green;
+        }
+
+        if (synthNode7.GetComponent<SynthNode>().IsDone() && !done[6])
+        {
+            Debug.Log("synthNode5");
+            done[6] = true;
+            synthNodeLight7.color = Color.green;
+        }
+
+        if (synthNode8.GetComponent<SynthNode>().IsDone() && !done[7])
+        {
+            Debug.Log("synthNode5");
+            done[7] = true;
+            synthNodeLight8.color = Color.green;
+        }
+
         if (OpenDoor() && !isDone)
         {
             openingDoor.Play();
@@ -81,7 +123,7 @@ public class BlastDoorHandler : MonoBehaviour {
 
     public bool OpenDoor()
     {
-        for (int i = 0; i < 2; i++)
+        for (int i = 0; i < 8; i++)
         {
             if (!done[i])
                 return false;
