@@ -46,7 +46,7 @@ public class PlayerEvent : MonoBehaviour {
         Vector3 fwd = playercamera.transform.TransformDirection(transform.forward);
 
         if (Input.GetButtonDown("Fire1") && setHit == false) {
-            if (Physics.Raycast(ray, out hit, 1.5f, 1)) { 
+            if (Physics.Raycast(ray, out hit, 3f, 1)) { 
 
             //if (Physics.Raycast(transform.position, fwd, out hit, 1.5f, 1)) {
 
@@ -85,12 +85,12 @@ public class PlayerEvent : MonoBehaviour {
                 //Debug.DrawRay(ray.origin, ray.direction * 3 Color.yellow);
             }
         }
-        else if (Physics.Raycast(ray, out hit, 1.5f, 1))
+        else if (Physics.Raycast(ray, out hit, 3f, 1))
             Interactable();
         else
             setIconHand(true);
 
-        Debug.DrawRay(ray.origin, ray.direction * 1.5f, Color.yellow);
+        Debug.DrawRay(ray.origin, ray.direction * 3f, Color.yellow);
         //}
         //else
         //   anim.SetBool("Idle", true);
