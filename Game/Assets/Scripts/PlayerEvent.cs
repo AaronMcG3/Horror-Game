@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerEvent : MonoBehaviour {
 
     [SerializeField] private Transform point;
-    [SerializeField] private GameObject playercamera, playerMovement;
+    [SerializeField] private GameObject playercamera, playerMovement, endScreen;
     [SerializeField] private Animator anim;
 
     private RaycastHit hit;
@@ -26,7 +26,15 @@ public class PlayerEvent : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         Fire();
-	}
+
+        if (Input.GetKey("escape"))
+        {
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+            Time.timeScale = 0;
+            endScreen.SetActive(true);
+        }
+    }
 
     private void Fire()
     {

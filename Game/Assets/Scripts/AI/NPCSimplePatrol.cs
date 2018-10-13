@@ -14,6 +14,10 @@ public class NPCSimplePatrol : MonoBehaviour {
 
     [SerializeField] List<Waypoint> patrolPoints;
 
+    [SerializeField] private GameObject deathScreenUI;
+
+    private Transform playerTra;
+        
     NavMeshAgent navMeshAgents;
     int currentPatrolIndex;
     bool travelling;
@@ -21,8 +25,11 @@ public class NPCSimplePatrol : MonoBehaviour {
     bool patrolForward;
     float waitTimer;
 
-	// Use this for initialization
-	void Start () {
+    bool go, exitBool;
+    float exitFloat;
+
+    // Use this for initialization
+    void Start () {
 
         navMeshAgents = this.GetComponent<NavMeshAgent>();
 
@@ -31,8 +38,7 @@ public class NPCSimplePatrol : MonoBehaviour {
             currentPatrolIndex = 0;
             SetDestination();
         }
-
-	}
+    }
 
     // Update is called once per frame
     void Update () {
@@ -63,7 +69,7 @@ public class NPCSimplePatrol : MonoBehaviour {
                 SetDestination();
             }
         }
-	}
+    }
 
     private void ChangePatrolPoint()
     {
@@ -86,6 +92,16 @@ public class NPCSimplePatrol : MonoBehaviour {
             Vector3 targetVector = patrolPoints[currentPatrolIndex].transform.position;
             navMeshAgents.SetDestination(targetVector);
             travelling = true;
+        }
+    }
+
+    void OnTriggerStay(Collider other)
+    {
+        if (other.tag == "Player")
+        {
+            Time.timeScale = 0f;
+            Cursor.lockState = CursorLockMode.Locked;
+            deathScreenUI.SetActive(true);
         }
     }
 }
