@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -113,6 +113,25 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &73745978 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100008, guid: 226df24cfe172724c89db58553c330f4,
+    type: 3}
+  m_PrefabInternal: {fileID: 321409129}
+--- !u!64 &73745980
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 73745978}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 226df24cfe172724c89db58553c330f4, type: 3}
 --- !u!1 &308910770
 GameObject:
   m_ObjectHideFlags: 0
@@ -177,8 +196,1045 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &312036364 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100002, guid: 226df24cfe172724c89db58553c330f4,
+    type: 3}
+  m_PrefabInternal: {fileID: 321409129}
+--- !u!64 &312036366
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 312036364}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300004, guid: 226df24cfe172724c89db58553c330f4, type: 3}
+--- !u!1001 &321409129
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400006, guid: 226df24cfe172724c89db58553c330f4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400006, guid: 226df24cfe172724c89db58553c330f4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400006, guid: 226df24cfe172724c89db58553c330f4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400006, guid: 226df24cfe172724c89db58553c330f4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400006, guid: 226df24cfe172724c89db58553c330f4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400006, guid: 226df24cfe172724c89db58553c330f4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400006, guid: 226df24cfe172724c89db58553c330f4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400006, guid: 226df24cfe172724c89db58553c330f4, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: 226df24cfe172724c89db58553c330f4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -59.62
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 226df24cfe172724c89db58553c330f4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -59.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300002, guid: 226df24cfe172724c89db58553c330f4, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: e70fa9ce224989d41a1d626eb80c09e4, type: 2}
+    - target: {fileID: 2300002, guid: 226df24cfe172724c89db58553c330f4, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: bb7609f2e3eb77d4c8015d581d159ffa, type: 2}
+    - target: {fileID: 2300006, guid: 226df24cfe172724c89db58553c330f4, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ae83d81c18b089d4d81d59af16ac3830, type: 2}
+    - target: {fileID: 2300002, guid: 226df24cfe172724c89db58553c330f4, type: 3}
+      propertyPath: m_Materials.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: ae83d81c18b089d4d81d59af16ac3830, type: 2}
+    - target: {fileID: 2300004, guid: 226df24cfe172724c89db58553c330f4, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: bb7609f2e3eb77d4c8015d581d159ffa, type: 2}
+    - target: {fileID: 2300000, guid: 226df24cfe172724c89db58553c330f4, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: e70fa9ce224989d41a1d626eb80c09e4, type: 2}
+    - target: {fileID: 2300000, guid: 226df24cfe172724c89db58553c330f4, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: bb7609f2e3eb77d4c8015d581d159ffa, type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 226df24cfe172724c89db58553c330f4, type: 3}
+  m_IsPrefabAsset: 0
+--- !u!1001 &335522073
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1082976066}
+    m_Modifications:
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 67.09
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -22.97
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 39.23694
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1864827455790036, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_Name
+      value: Candle Holder Wall Fixture (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1.0000005
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 1.0000005
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &335522074 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2,
+    type: 2}
+  m_PrefabInternal: {fileID: 335522073}
+--- !u!1001 &364777345
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1082976066}
+    m_Modifications:
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -58.567
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -22.97
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -45.34
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1864827455790036, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_Name
+      value: Candle Holder Wall Fixture (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -270
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1.0000005
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 1.0000005
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &364777346 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2,
+    type: 2}
+  m_PrefabInternal: {fileID: 364777345}
+--- !u!1001 &430932073
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1082976066}
+    m_Modifications:
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -63.543
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -22.97
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -67.61
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1864827455790036, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_Name
+      value: Candle Holder Wall Fixture (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -270
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1.0000005
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 1.0000005
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &430932074 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2,
+    type: 2}
+  m_PrefabInternal: {fileID: 430932073}
+--- !u!1001 &466003718
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1082976066}
+    m_Modifications:
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -22.9525
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -22.97
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 57.74
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1864827455790036, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_Name
+      value: Candle Holder Wall Fixture (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -180
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &466003719 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2,
+    type: 2}
+  m_PrefabInternal: {fileID: 466003718}
+--- !u!1001 &567900825
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1082976066}
+    m_Modifications:
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -61.431
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -22.97
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 57.742
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_RootOrder
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1864827455790036, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_Name
+      value: Candle Holder Wall Fixture (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -180
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &567900826 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2,
+    type: 2}
+  m_PrefabInternal: {fileID: 567900825}
+--- !u!1 &801793548 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 226df24cfe172724c89db58553c330f4,
+    type: 3}
+  m_PrefabInternal: {fileID: 321409129}
+--- !u!64 &801793550
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 801793548}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300006, guid: 226df24cfe172724c89db58553c330f4, type: 3}
+--- !u!1001 &825814856
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1082976066}
+    m_Modifications:
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 33.42
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -22.97
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -64.88
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_RootOrder
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 1864827455790036, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_Name
+      value: Candle Holder Wall Fixture (16)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &825814857 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2,
+    type: 2}
+  m_PrefabInternal: {fileID: 825814856}
+--- !u!1001 &865848607
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1082976066}
+    m_Modifications:
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -76.594
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -22.97
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -36.86
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1864827455790036, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_Name
+      value: Candle Holder Wall Fixture (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -270
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1.0000005
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 1.0000005
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &865848608 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2,
+    type: 2}
+  m_PrefabInternal: {fileID: 865848607}
+--- !u!1001 &905115582
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 224468816614521378, guid: 0a2670b236b977d4e9dcec9e9ccb79f2,
+        type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224468816614521378, guid: 0a2670b236b977d4e9dcec9e9ccb79f2,
+        type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224468816614521378, guid: 0a2670b236b977d4e9dcec9e9ccb79f2,
+        type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224468816614521378, guid: 0a2670b236b977d4e9dcec9e9ccb79f2,
+        type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224468816614521378, guid: 0a2670b236b977d4e9dcec9e9ccb79f2,
+        type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224468816614521378, guid: 0a2670b236b977d4e9dcec9e9ccb79f2,
+        type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224468816614521378, guid: 0a2670b236b977d4e9dcec9e9ccb79f2,
+        type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224468816614521378, guid: 0a2670b236b977d4e9dcec9e9ccb79f2,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 224468816614521378, guid: 0a2670b236b977d4e9dcec9e9ccb79f2,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224468816614521378, guid: 0a2670b236b977d4e9dcec9e9ccb79f2,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224468816614521378, guid: 0a2670b236b977d4e9dcec9e9ccb79f2,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224468816614521378, guid: 0a2670b236b977d4e9dcec9e9ccb79f2,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224468816614521378, guid: 0a2670b236b977d4e9dcec9e9ccb79f2,
+        type: 2}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224468816614521378, guid: 0a2670b236b977d4e9dcec9e9ccb79f2,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224468816614521378, guid: 0a2670b236b977d4e9dcec9e9ccb79f2,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224468816614521378, guid: 0a2670b236b977d4e9dcec9e9ccb79f2,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224468816614521378, guid: 0a2670b236b977d4e9dcec9e9ccb79f2,
+        type: 2}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224468816614521378, guid: 0a2670b236b977d4e9dcec9e9ccb79f2,
+        type: 2}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0a2670b236b977d4e9dcec9e9ccb79f2, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!1 &905115583 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1616211487469300, guid: 0a2670b236b977d4e9dcec9e9ccb79f2,
+    type: 2}
+  m_PrefabInternal: {fileID: 905115582}
+--- !u!1001 &1004519156
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1082976066}
+    m_Modifications:
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 54.546
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -22.97
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 49.83
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 1864827455790036, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_Name
+      value: Candle Holder Wall Fixture (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1.0000005
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 1.0000005
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &1004519157 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1004519156}
+--- !u!1001 &1043658093
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1082976066}
+    m_Modifications:
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 33.42
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -22.97
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -82.348
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_RootOrder
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1864827455790036, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_Name
+      value: Candle Holder Wall Fixture (15)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &1043658094 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1043658093}
+--- !u!1 &1082976065
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1082976066}
+  m_Layer: 0
+  m_Name: Lights
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1082976066
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1082976065}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1537944244}
+  - {fileID: 466003719}
+  - {fileID: 2120314189}
+  - {fileID: 335522074}
+  - {fileID: 1991693167}
+  - {fileID: 364777346}
+  - {fileID: 865848608}
+  - {fileID: 430932074}
+  - {fileID: 1090801150}
+  - {fileID: 1983514427}
+  - {fileID: 1490966532}
+  - {fileID: 1162061315}
+  - {fileID: 1307268201}
+  - {fileID: 1004519157}
+  - {fileID: 1414749569}
+  - {fileID: 1043658094}
+  - {fileID: 825814857}
+  - {fileID: 1789966949}
+  - {fileID: 567900826}
+  - {fileID: 1413179150}
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1090801149
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1082976066}
+    m_Modifications:
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -64.052
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -22.97
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -25.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1864827455790036, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_Name
+      value: Candle Holder Wall Fixture (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -270
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1.0000005
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 1.0000005
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &1090801150 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1090801149}
+--- !u!1001 &1162061314
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1082976066}
+    m_Modifications:
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 34.549
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -22.97
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 30.129
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1864827455790036, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_Name
+      value: Candle Holder Wall Fixture (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1.0000005
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 1.0000005
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &1162061315 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1162061314}
+--- !u!1001 &1307268200
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1082976066}
+    m_Modifications:
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 29.074
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -22.97
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 38.62
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1864827455790036, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_Name
+      value: Candle Holder Wall Fixture (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1.0000005
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 1.0000005
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &1307268201 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1307268200}
+--- !u!1001 &1313944074
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 224017486712351864, guid: c64dbb9bf9ccf0546ac0336b2ecf006d,
+        type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4707587440962048, guid: c64dbb9bf9ccf0546ac0336b2ecf006d, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -6.362681
+      objectReference: {fileID: 0}
+    - target: {fileID: 4707587440962048, guid: c64dbb9bf9ccf0546ac0336b2ecf006d, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 1.94
+      objectReference: {fileID: 0}
+    - target: {fileID: 4707587440962048, guid: c64dbb9bf9ccf0546ac0336b2ecf006d, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -14.856341
+      objectReference: {fileID: 0}
+    - target: {fileID: 4707587440962048, guid: c64dbb9bf9ccf0546ac0336b2ecf006d, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4707587440962048, guid: c64dbb9bf9ccf0546ac0336b2ecf006d, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4707587440962048, guid: c64dbb9bf9ccf0546ac0336b2ecf006d, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4707587440962048, guid: c64dbb9bf9ccf0546ac0336b2ecf006d, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4707587440962048, guid: c64dbb9bf9ccf0546ac0336b2ecf006d, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114615152043186952, guid: c64dbb9bf9ccf0546ac0336b2ecf006d,
+        type: 2}
+      propertyPath: pauseMenuScreen
+      value: 
+      objectReference: {fileID: 905115583}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c64dbb9bf9ccf0546ac0336b2ecf006d, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1 &1323201568
 GameObject:
   m_ObjectHideFlags: 0
@@ -195,7 +1251,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!81 &1323201569
 AudioListener:
   m_ObjectHideFlags: 0
@@ -256,3 +1312,493 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1413179149
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1082976066}
+    m_Modifications:
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -42.056
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -22.97
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 49.252
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_RootOrder
+      value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 1864827455790036, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_Name
+      value: Candle Holder Wall Fixture (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -180
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &1413179150 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1413179149}
+--- !u!1001 &1414749568
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1082976066}
+    m_Modifications:
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 33.42
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -22.97
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -70.39
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 1864827455790036, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_Name
+      value: Candle Holder Wall Fixture (14)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &1414749569 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1414749568}
+--- !u!1001 &1416453925
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4703359837676818, guid: f98dfe006eed06d4bbd1ac904a291db4, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 2.244
+      objectReference: {fileID: 0}
+    - target: {fileID: 4703359837676818, guid: f98dfe006eed06d4bbd1ac904a291db4, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -7.83649
+      objectReference: {fileID: 0}
+    - target: {fileID: 4703359837676818, guid: f98dfe006eed06d4bbd1ac904a291db4, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -2.5190277
+      objectReference: {fileID: 0}
+    - target: {fileID: 4703359837676818, guid: f98dfe006eed06d4bbd1ac904a291db4, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4703359837676818, guid: f98dfe006eed06d4bbd1ac904a291db4, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4703359837676818, guid: f98dfe006eed06d4bbd1ac904a291db4, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4703359837676818, guid: f98dfe006eed06d4bbd1ac904a291db4, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4703359837676818, guid: f98dfe006eed06d4bbd1ac904a291db4, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f98dfe006eed06d4bbd1ac904a291db4, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!1001 &1490966531
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1082976066}
+    m_Modifications:
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 54.061
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -22.97
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 7.87
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1864827455790036, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_Name
+      value: Candle Holder Wall Fixture (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1.0000005
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 1.0000005
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &1490966532 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1490966531}
+--- !u!1001 &1537944243
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1082976066}
+    m_Modifications:
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 52.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -22.97
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -55.891
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &1537944244 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1537944243}
+--- !u!1001 &1789966948
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1082976066}
+    m_Modifications:
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 14.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -22.97
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -55.886
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_RootOrder
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 1864827455790036, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_Name
+      value: Candle Holder Wall Fixture (17)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &1789966949 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1789966948}
+--- !u!1001 &1983514426
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1082976066}
+    m_Modifications:
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 49.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -22.97
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 30.14
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1864827455790036, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_Name
+      value: Candle Holder Wall Fixture (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1.0000005
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 1.0000005
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &1983514427 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1983514426}
+--- !u!1001 &1991693166
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1082976066}
+    m_Modifications:
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -44.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -22.97
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -45.34
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1864827455790036, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_Name
+      value: Candle Holder Wall Fixture (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -270
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1.0000005
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 1.0000005
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &1991693167 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1991693166}
+--- !u!1001 &2120314188
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1082976066}
+    m_Modifications:
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -38.57
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -22.97
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -36.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1864827455790036, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_Name
+      value: Candle Holder Wall Fixture (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -270
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6f97894a83c9dc24ca0f931136345bf2, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &2120314189 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4947015651666362, guid: 6f97894a83c9dc24ca0f931136345bf2,
+    type: 2}
+  m_PrefabInternal: {fileID: 2120314188}

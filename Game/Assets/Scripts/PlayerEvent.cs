@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerEvent : MonoBehaviour {
 
     [SerializeField] private Transform point;
-    [SerializeField] private GameObject playercamera, playerMovement, endScreen;
+    [SerializeField] private GameObject playercamera, playerMovement, pauseMenuScreen;
     [SerializeField] private Animator anim;
 
     private RaycastHit hit;
@@ -32,7 +32,7 @@ public class PlayerEvent : MonoBehaviour {
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
             Time.timeScale = 0;
-            endScreen.SetActive(true);
+            pauseMenuScreen.SetActive(true);
         }
     }
 
@@ -96,7 +96,7 @@ public class PlayerEvent : MonoBehaviour {
         else if (Physics.Raycast(ray, out hit, 3f, 1))
             Interactable();
         else
-            setIconHand(true);
+            SetIconHand(true);
 
         Debug.DrawRay(ray.origin, ray.direction * 3f, Color.yellow);
         //}
@@ -109,21 +109,21 @@ public class PlayerEvent : MonoBehaviour {
         switch (hit.collider.tag)
         {
             case "SynthNode":
-                setIconHand(false);
+                SetIconHand(false);
                 break;
             case "OpenOut":
-                setIconHand(false);
+                SetIconHand(false);
                 break;
             case "OpenIn":
-                setIconHand(false);
+                SetIconHand(false);
                 break;
             default:
-                setIconHand(true);
+                SetIconHand(true);
                 break;
         }
     }
 
-    private void setIconHand(bool set){
+    private void SetIconHand(bool set){
         anim.SetBool("Idle", set);
     }
 

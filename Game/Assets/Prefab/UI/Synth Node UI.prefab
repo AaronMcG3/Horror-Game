@@ -3741,13 +3741,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73f0cea7476ff1649a7138128733612f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerEvent: {fileID: 0}
   frequency: {fileID: 114076091818589784}
   currtFrequency: {fileID: 114399620608023068}
   speed: {fileID: 114736094868984830}
   currtSpeed: {fileID: 114321013060923908}
   volume: {fileID: 114259931539502178}
   currtVolume: {fileID: 114298554009382538}
+  aDEn: {fileID: 0}
+  aDSREn: {fileID: 0}
+  glitchEn: {fileID: 0}
+  noneEn: {fileID: 0}
+  distortionEn: {fileID: 0}
+  noiseEn: {fileID: 0}
+  sineEn: {fileID: 0}
+  sawEn: {fileID: 0}
+  triEn: {fileID: 0}
+  rectEn: {fileID: 0}
   complete: {fileID: 114846543262709004}
+  clickClip: {fileID: 0}
+  correctAnswer: {fileID: 0}
+  interfaceClick: {fileID: 0}
 --- !u!114 &114895016941793720
 MonoBehaviour:
   m_ObjectHideFlags: 1
