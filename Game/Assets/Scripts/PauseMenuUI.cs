@@ -16,11 +16,6 @@ public class PauseMenuUI : MonoBehaviour {
         resume.onClick.AddListener(ResumeClick);
         quit.onClick.AddListener(QuitClick);
     }
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 
     private void MainMenuClick()
     {
