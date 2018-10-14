@@ -100,7 +100,7 @@ public class NPCSimplePatrol : MonoBehaviour {
         if (other.tag == "Player")
         {
             Time.timeScale = 0f;
-            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.lockState = CursorLockMode.None;
             deathScreenUI.SetActive(true);
         }
     }
